@@ -1,4 +1,4 @@
-# Advent of Code 2024 Solutions in Prolog
+# Advent of Code 2024 Solutions in Prolog  <img src="./.github/swi-prolog.svg" align="right" width="350">
 
 [![LoC](https://tokei.rs/b1/github/Meisterlala/advent-of-code-2024)](https://github.com/search?q=repo%3AMeisterlala%2Fadvent-of-code-2024++language%3AProlog&type=code)  [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/meisterlala/advent-of-code-2024/main)](https://github.com/Meisterlala/advent-of-code-2024/commits/main/)
 
