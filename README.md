@@ -19,6 +19,7 @@ This repository contains solutions for the [Advent of Code 2024](https://advento
 ## How to Run the Code
 
 Install [SWI-Prolog](https://www.swi-prolog.org/download/stable) on your machine to run the solutions.
+Then log into the Advent of Code website and download the input data for the specific day you want to run the code for. Save the input data in a file named `dayXX` in the `input` directory, where `XX` is the day number.
 
 Then run:
 ```sh
