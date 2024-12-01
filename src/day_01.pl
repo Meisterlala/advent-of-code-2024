@@ -7,7 +7,6 @@ part1(L1, L2, Sum):-
 
 part2(L1, L2, Simmilarity):-
     findall(Sim, (member(X, L1), simmilarity(X, L2, Sim)), Sim_lists),
-    write('Sim lists: '), writeln(Sim_lists),
     
     sum_list(Sim_lists, Simmilarity).
 
