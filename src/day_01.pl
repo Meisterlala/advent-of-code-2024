@@ -1,0 +1,59 @@
+% Example imput
+
+
+% Element wise difference
+diff([], [], []).
+diff([H1|T1], [H2|T2], [Diff| Res]):-
+    Diff is abs(H1 - H2),
+    diff(T1, T2, Res).
+
+part1(L1, L2, Sum):-
+    msort(L1, L1_sorted),
+    msort(L2, L2_sorted),
+
+    % lengths
+    % write('Lengths: '), writeln([Len1, Len2]),
+    
+
+    diff(L1_sorted, L2_sorted, Diff),
+    % write('Diff list: '), writeln(Diff),
+
+    sum_list(Diff, Sum).
+
+% DCG to parse the file content
+file_content(List1, List2) --> lines(List1, List2).
+
+lines([], []) --> [].
+lines([N1|List1], [N2|List2]) --> line(N1, N2), lines(List1, List2).
+
+line(N1, N2) --> number(N1), "   ", number(N2), "\n".
+
+number(N) --> digit(D), digits(Ds), { number_codes(N, [D|Ds]) }.
+digits([D|Ds]) --> digit(D), digits(Ds).
+digits([]) --> [].
+
+digit(D) --> [D], { code_type(D, digit) }.
+
+% Read the file and generate two lists
+read_file(File, List1, List2) :-
+    open(File, read, Stream),
+    read_string(Stream, _, Content),
+    close(Stream),
+    string_codes(Content, Codes),
+    % write('Codes: '), writeln(Codes),
+    
+    phrase(file_content(List1, List2), Codes).
+
+% Example usage
+generate_lists_from_file(File, List1, List2) :-
+    read_file(File, List1, List2).
+
+% Test cases
+?- part1([3,4,2,1,3,3], [4,3,5,3,9,3], 11).
+?- msort([3,4,2,1,3,3], L1), msort([4,3,5,3,9,3], L2), diff(L1, L2, [2,1,0,1,2,5]).
+
+solve_part1(Sum) :- 
+    generate_lists_from_file('../inputs/day01', List1, List2),
+    part1(List1, List2, Sum).
+
+start:- solve_part1(Sum), writeln(Sum).
