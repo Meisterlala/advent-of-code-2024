@@ -5,7 +5,7 @@ use_module(library(pio)).
 file_content(Levels) --> levels(Levels).
 
 levels([]) --> [].
-levels([L1|Ls]) --> level(L1), "\n", levels(Ls).
+levels([L1|Ls]) --> level(L1), ([] | " "),"\n",  levels(Ls).
 
 level(R) --> reports(R).
 
