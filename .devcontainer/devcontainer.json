@@ -16,7 +16,7 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"arthurwang.vsc-prolog"
+				"AmauryRabouan.new-vsc-prolog"
 			]
 		}
 	}
