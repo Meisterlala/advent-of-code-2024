@@ -71,9 +71,6 @@ multiplications2(State, Ms) -->
     [_],
     multiplications2(State, Ms).
 multiplications2(_, []) --> [].
-% Parse ignored characters
-ignored2 --> [_], ignored2.
-ignored2 --> [].
     
 do --> "do()".
 dont --> "don't()".
