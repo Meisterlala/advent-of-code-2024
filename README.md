@@ -15,7 +15,7 @@ This repository contains solutions for the [Advent of Code 2024](https://advento
 | :----------------------------------------------------------------------------- | :------------ | :-------------------: |
 | [Day 1: Historian Hysteria](https://adventofcode.com/2024/day/1)               | :star: :star: | [Code](src/day_01.pl) |
 | [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/2)                | :star: :star: | [Code](src/day_02.pl) |
-
+| [Day 3: Mull It Over](https://adventofcode.com/2024/day/3)                     | :star: :star: | [Code](src/day_03.pl) |
 
 ## How to Run the Code
 
