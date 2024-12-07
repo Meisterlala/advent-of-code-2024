@@ -17,6 +17,7 @@ This repository contains solutions for the [Advent of Code 2024](https://advento
 | [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/2)                | :star: :star: | [Code](src/day_02.pl) |
 | [Day 3: Mull It Over](https://adventofcode.com/2024/day/3)                     | :star: :star: | [Code](src/day_03.pl) |
 | [Day 4: Ceres Search](https://adventofcode.com/2024/day/4)                     | :star: :star: | [Code](src/day_04.pl) |
+| [Day 5: Print Queue](https://adventofcode.com/2024/day/5)                     |  | [Code](src/day_05.pl) |
 
 ## How to Run the Code
 
